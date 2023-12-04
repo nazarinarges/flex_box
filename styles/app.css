@@ -344,6 +344,8 @@ margin-bottom: 0rem;
 .works-title{
 color: #081D43;
 margin-top: 0.5rem;
+font-family: 'TTNorms Medium';
+font-weight: normal;
 }
 
 .works-content{
@@ -377,6 +379,38 @@ margin: 0 auto;
     /* width: 100%; */
 }
 
+.comments{
+    margin-top: 3rem;
+    max-height 80rem;;
+    width:100%;
+    background-color: #0050C8;
+}
+
+.comments-titles{
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+.main-comments-content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.main-content-box{
+    background-color: #fff;
+    margin: 1rem;
+}
+
+.main-contect-text{
+
+}
+
+.main-contect-peaple{
+    display: flex;
+    padding: 1rem;
+}
 
 
 
