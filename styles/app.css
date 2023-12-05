@@ -379,11 +379,12 @@ margin: 0 auto;
     /* width: 100%; */
 }
 
-.comments{
+/* persion comments */
+.person-comments{
     margin-top: 3rem;
     max-height 80rem;;
     width:100%;
-    background-color: #0050C8;
+    background-color: #2F5BEA;
 }
 
 .comments-titles{
@@ -392,22 +393,22 @@ margin: 0 auto;
     color: #fff;
 }
 
-.main-comments-content{
+.comments{
     display: flex;
     justify-content: space-between;
     
 }
 
-.main-content-box{
+.comment{
     background-color: #fff;
     margin: 1rem;
 }
 
-.main-contect-text{
+.comment-body{
 
 }
 
-.main-contect-peaple{
+.comment-info{
     display: flex;
     padding: 1rem;
 }
