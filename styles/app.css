@@ -404,6 +404,7 @@ margin: 0 auto;
 .comments{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 
@@ -414,7 +415,8 @@ margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;  
-    height: 16rem;  
+    min-height: 18rem;  
+    flex-basis: 18rem;
 }
 
 .comment-content{
@@ -443,9 +445,13 @@ margin: 0 auto;
 
 .comment-person{
     margin: 0;
+    color: black;
 }
 
-
+.comments-container{
+    max-width:70rem ;
+    margin: 0 auto;
+}
 
 /* Project Responsive */
 
