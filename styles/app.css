@@ -336,12 +336,12 @@ margin-top: 5rem;
 text-align: center;
 }
 
-.works-text{
+.works-text,.portfolio-text{
 color: #6C7890;
 margin-bottom: 0rem;
 }
 
-.works-title{
+.works-title,.portfolio-title{
 color: #081D43;
 margin-top: 0.5rem;
 font-family: 'TTNorms Medium';
@@ -405,6 +405,7 @@ margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 3rem;
     
 }
 
@@ -417,6 +418,7 @@ margin: 0 auto;
     justify-content: space-between;  
     min-height: 18rem;  
     flex-basis: 18rem;
+    text-align: justify;
 }
 
 .comment-content{
@@ -449,9 +451,60 @@ margin: 0 auto;
 }
 
 .comments-container{
-    max-width:70rem ;
+    max-width:60rem ;
     margin: 0 auto;
 }
+
+.companies{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.company{
+    display:block;
+    margin: 1rem;
+}
+
+
+/* portfolio */
+.portfolio{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.portfolio-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.portfolio-item{
+    flex-basis: 23rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.portfolio-img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Project Responsive */
 
