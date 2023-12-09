@@ -1,6 +1,6 @@
 let menu = document.querySelector(".menu")
-let menuBtn = document.querySelector(".header__icon")
-let menuBtnIcon = document.querySelector(".header__icon i")
+let menuBtn = document.querySelector(".header-icon")
+let menuBtnIcon = document.querySelector(".header-icon i")
 
 menuBtn.addEventListener("click",function (){
     if (menuBtnIcon.classList.contains("fa-bars")){
