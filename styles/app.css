@@ -263,6 +263,13 @@ body {
     padding: 0.5rem 1rem;
     
 }
+
+.header-icon{
+    font-size: 1.8rem;
+    display: none;
+    cursor: pointer;
+}
+
 /* header-bottom */
 .header-bottom{
 margin-top: 5rem;
@@ -288,6 +295,7 @@ flex-basis: 50%;
     font-family: 'TTNorms Medium';
     font-weight: normal;
     line-height: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .header-content-text{
@@ -334,11 +342,13 @@ margin-top: 5rem;
 
 .works{
 text-align: center;
+padding: 5rem 0;
 }
 
 .works-text,.portfolio-text{
 color: #6C7890;
 margin-bottom: 0rem;
+margin-top: 0;
 }
 
 .works-title,.portfolio-title{
@@ -346,17 +356,20 @@ color: #081D43;
 margin-top: 0.5rem;
 font-family: 'TTNorms Medium';
 font-weight: normal;
+font-size: 2.5rem;
 }
 
 .works-content{
 display: flex;
 margin-top: 3.5rem;
 justify-content: space-around;
+flex-wrap: wrap;
 /* margin: 0rem 5rem; */
 }
 
 .works-content-item{
-
+flex-basis: 16rem;
+flex-shrink: 0;
 }
 
 .work-contect-title{
@@ -395,10 +408,14 @@ margin: 0 auto;
 .person-comments-title{
     font-family: "TTNorms Medium ";
     font-weight: normal;
+    margin-top: 0;
 }
 
 .person-comments-text{
     font-family: "TTNorms Light ";
+    max-width: 28rem;
+    margin: 0 auto;
+    line-height: 1.8rem;
 }
 
 .comments{
@@ -472,7 +489,7 @@ margin: 0 auto;
 /* portfolio */
 .portfolio{
     text-align: center;
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 
 .portfolio-items{
@@ -491,12 +508,61 @@ margin: 0 auto;
 
 .portfolio-img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+/* footer */
 
+.footer-tops{
+    background-color: #2F5BEA;
+    padding: 5rem 0;
+}
 
+.footor-text{
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.6rem;
+}
 
+.box-email{
+    background-color: #fff;
+    flex-basis: 22rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
 
+}
+
+.email-address{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.box-btn{
+background-color: #2F5BEA;
+border: none;
+outline: none;
+padding: 1rem 1.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 0.5rem;
+}
+
+.footer-top ,.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom{
+    color: #7E8085;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
 
 
 
@@ -512,22 +578,134 @@ margin: 0 auto;
     .container {
         max-width: 960px;
     }
+    .portfolio-item{
+        flex-basis: 28rem;
+    }
+    .footor-text{
+        max-width: 28rem;
+    }
+   
+    
 }
 
 @media only screen and (max-width: 992px) {
     .container {
         max-width: 720px;
     }
+    .buttom{
+        display: none;
+    }
+    .header-content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .header-content-image{
+        margin-bottom: 2rem;
+    }
+    .header-content-wrapper{
+        max-width: 100%;
+    }
+    .header-content-links{
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .header-content-link{
+        margin-bottom: 1rem;
+    }
+    .comments{
+        flex-wrap: wrap;
+    }
+    .comment{
+        flex-basis: 19rem;
+        margin: 3rem auto;
+    }
+    .companies{
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .portfolio-item{
+        flex-basis: 19rem;
+    }
+    .footor-text{
+        max-width: 20rem;
+    }
+
+
+
 }
 
 @media only screen and (max-width: 768px) {
     .container {
         max-width: 540px;
     }
+    .header-icon{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        top: 0;
+        left: -256px;
+        bottom: 0;
+        background-color: #0050C8;
+        width: 16rem;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        transition: 0.3s all;
+    }
+    .menu-item{
+        margin-bottom:2rem;
+        font-size: 1.2rem;
+    }
+    .works-content-item{
+        flex-basis: 14rem;
+    }
+    .comment{
+        margin: 0 0 1.5rem 0;
+        flex-basis: 15rem;
+    }
+    .portfolio-item{
+        flex-basis: 15rem;
+    }
+    .footer-top{
+        flex-direction: column;
+        
+    }
+    .box-email{
+        flex-basis: auto;
+        width: 100%;
+    }
+    .footor-text{
+        max-width:100%;
+    }
+
+
+
+
 }
 
 @media only screen and (max-width: 576px) {
     .container {
         max-width: 100%;
+    }
+    .works-content-item{
+        flex-basis: 100%;
+    }
+    .work-contect-text{
+        max-width: 100%;
+    }
+    .comment{
+        margin: 2rem auto;
+    }
+    .companies{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .portfolio-item{
+        margin: 2rem auto;
+        flex-basis: 80%;
+    }
+    .box-btn{
+        padding: 1rem  1.2rem;
     }
 }
